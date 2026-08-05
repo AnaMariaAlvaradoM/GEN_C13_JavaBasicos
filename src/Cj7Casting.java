@@ -5,8 +5,6 @@ public class Cj7Casting {
         double promedio = precio / cantidad;
         System.out.println(promedio);
 
-
-
         double precio2 = 7.89;
         int entero = (int) precio2;
         System.out.println(entero);
