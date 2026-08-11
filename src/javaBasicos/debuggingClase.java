@@ -1,3 +1,5 @@
+package javaBasicos;
+
 public class debuggingClase {
     public static void main(String[] args) {
 //        int precio = "cinco mil";

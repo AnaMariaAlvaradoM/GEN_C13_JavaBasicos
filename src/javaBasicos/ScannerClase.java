@@ -1,3 +1,5 @@
+package javaBasicos;
+
 import java.util.Scanner;
 
 public class ScannerClase {

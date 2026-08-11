@@ -1,3 +1,5 @@
+package javaBasicos;
+
 public class Cj7Casting {
     public static void main(String[] args) {
         int precio = 10;
