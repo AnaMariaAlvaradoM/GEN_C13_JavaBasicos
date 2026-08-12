@@ -65,4 +65,30 @@ public class Reserva {
     public void setConfirmada(boolean confirmada) {
         this.confirmada = confirmada;
     }
+
+    public void imprimir() {
+        System.out.println("Cliente: " + this.huesped);
+        System.out.println("Habitación: " + this.numeroHabitacion);
+        System.out.println("Precio/noche: $" + this.precioPorNoche);
+        System.out.println("---");
+    }
+
+    public double calcularTotal(int noches) {
+        return this.precioPorNoche * noches;
+    }
+
+    public double calcularTotal(int noches, double descuento) {
+        double base = this.precioPorNoche * noches;
+        return base * (1 - descuento / 100);
+    }
+
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "huesped='" + huesped + '\'' +
+                ", numeroHabitacion=" + numeroHabitacion +
+                ", precioPorNoche=" + precioPorNoche +
+                ", confirmada=" + confirmada +
+                '}';
+    }
 }

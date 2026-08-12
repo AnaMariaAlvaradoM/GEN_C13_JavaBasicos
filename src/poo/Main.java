@@ -28,5 +28,31 @@ public class Main {
         System.out.println(r.getPrecioPorNoche());
         System.out.println(r.isConfirmada());
 
+
+        Reserva r1 = new Reserva("Ana Gómez", 202);
+        r1.imprimir();
+        Reserva r2 = new Reserva("Carlos Méndez", 101, 50000.0, true);
+        r2.imprimir();
+
+
+        r1.calcularTotal(5);
+        r2.calcularTotal(3);
+
+        double total = r1.calcularTotal(3);
+        System.out.println("Total por 3 noches: $" + total);
+
+        System.out.println(r2.calcularTotal(5));
+
+        System.out.println("Sin descuento: $" + r1.calcularTotal(3));
+        System.out.println("Con 15% descuento: $" + r1.calcularTotal(3, 15));
+
+
+
+
+        //! stactic
+
+        double impuesto = prueba.iva(100000);
+        System.out.println("IVA: $" + impuesto);
+
     }
 }
